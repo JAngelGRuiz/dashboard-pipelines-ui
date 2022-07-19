@@ -11,16 +11,16 @@ simple as posible.
 
 It should be recommendable to use at least the Context API depending on the complexity of the other pages and also take in mind if they're going to reuse the same the data or not. I mean, once we could know the general vision of the project then we could decide if we're going to use any state manager or we're just using a good design pattern to build upt the whole UI. However, the one solution we've got here is a really good start for an small aplication.
 
-I created a <serviceAPI> that can be scalable to fetch all data from the endpoints and also allows multiple requests in the same asynchronous block. This service is perfect to be used as a base service in all the requests that the app could need. The <serviceAPI> could be used and managed by any custom hook or Provider, so it can be easily integreted with any other technology or library to make it more efficient if the app's data grows up.
+I created a `serviceAPI` that can be scalable to fetch all data from the endpoints and also allows multiple requests in the same asynchronous block. This service is perfect to be used as a base service in all the requests that the app could need. The `serviceAPI` could be used and managed by any custom hook or Provider, so it can be easily integreted with any other technology or library to make it more efficient if the app's data grows up.
 
-In this solution I created a custom hook <useQuery> to handle any request through the ServiceAp so the components won't need to worry about handling the request in a useEffect hook. This hook receives the ServiceAPI's query that are inside services/queries and returns the data ready to be used in the component. The hook will handle the loading states, fetching the data and return it to the component.
+In this solution I created a custom hook `useQuery` to handle any request through the ServiceAp so the components won't need to worry about handling the request in a useEffect hook. This hook receives the `serviceAPI`'s query that are inside services/queries and returns the data ready to be used in the component. The hook will handle the loading states, fetching the data and return it to the component.
 
 ## How to make it run
 > IMPORTANT: This project uses YARN. 
 
 - clone the repo
-- run `yarn add` or <yarn>
-- run <yarn dev> to start the development server. it'll be running on the <http://localhost:3001>
+- run `yarn add` or `yarn`
+- run `yarn dev` to start the development server. it'll be running on the <http://localhost:3001>
 
 
 ## Folders Architecture
