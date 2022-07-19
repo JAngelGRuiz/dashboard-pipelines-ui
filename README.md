@@ -19,7 +19,7 @@ In this solution I created a custom hook <useQuery> to handle any request throug
 > IMPORTANT: This project uses YARN. 
 
 - clone the repo
-- run <yarn add> or <yarn>
+- run </yarn add> or <yarn>
 - run <yarn dev> to start the development server. it'll be running on the <http://localhost:3001>
 
 
