@@ -9,7 +9,7 @@ const reactRule = {
       [
         '@babel/preset-react',
         {
-          runtime: 'automatic',
+          runtime: 'automatic'
         }
       ]
     ]
@@ -29,21 +29,21 @@ module.exports = (env, argv) => {
 
   return {
     output: {
-        filename: isProduction 
+      filename: isProduction
         ? '[main].[contenthash].js'
         : 'main.js',
-        path: path.resolve(__dirname, 'build')
+      path: path.resolve(__dirname, 'build')
     },
     plugins: [
-        new HtmlWebpackPlugin({ template: 'public/index.html' })
+      new HtmlWebpackPlugin({ template: 'public/index.html' })
     ],
     module: {
-        rules: rules
+      rules
     },
     devServer: {
-        open: true,
-        port: 3000,
-        compress: true,
+      open: true,
+      port: 3001,
+      compress: true
     }
   }
 }
